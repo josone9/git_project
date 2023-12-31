@@ -1,16 +1,20 @@
 LEGAL_DRIVING_AGE = 18
+
 class Adult:
     def __init__(self, name, age, eye_colour, hair_colour):
+        # Initialize Adult object with provided attributes
         self.name = name
         self.age = age
         self.eye_colour = eye_colour
         self.hair_colour = hair_colour
 
     def can_drive(self):
+        # Check if the person is old enough to drive and print the result
         print(f"{self.name} is old enough to drive.")
 
 class Child(Adult):
     def can_drive(self):
+        # Override can_drive method for children and print the result
         print(f"{self.name} is too young to drive.")
 
 def main():
