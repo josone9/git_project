@@ -1,3 +1,4 @@
+LEGAL_DRIVING_AGE = 18
 class Adult:
     def __init__(self, name, age, eye_colour, hair_colour):
         self.name = name
@@ -20,7 +21,7 @@ def main():
     hair_colour = input("Enter the hair colour: ")
 
     # Determine if the person is 18 or older
-    if age >= 18:
+    if age >= LEGAL_DRIVING_AGE:
         person = Adult(name, age, eye_colour, hair_colour)
     else:
         person = Child(name, age, eye_colour, hair_colour)
